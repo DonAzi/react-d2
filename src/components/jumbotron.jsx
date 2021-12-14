@@ -1,22 +1,13 @@
-import {Nav} from 'react-bootstrap';
+import {Jumbotron, Button} from 'react-bootstrap';
 
+<Jumbotron>
+  <h1>Hello, world!</h1>
+  <p>
+    Hello World
+  </p>
+  <p>
+    <Button variant="primary">Learn more</Button>
+  </p>
+</Jumbotron>
 
-<Nav
-  activeKey="/home"
-  onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
->
-  <Nav.Item>
-    <Nav.Link href="/home">Active</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-1">Link</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-2">Link</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="disabled" disabled>
-      Disabled
-    </Nav.Link>
-  </Nav.Item>
-</Nav>
+export default Jumbotron
