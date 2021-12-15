@@ -1,8 +1,11 @@
-import {Nav} from 'react-bootstrap';
+import { Nav } from "react-bootstrap";
 
-
-const MyNavBar = (props) => (
-    <Nav bg="primary" variant="light" expand="lg" 
+const MyNavBar = () => {
+  return (
+    <Nav
+      bg="dark"
+      variant="light"
+      expand="lg"
       activeKey="/home"
       onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
     >
@@ -16,7 +19,7 @@ const MyNavBar = (props) => (
         <Nav.Link eventKey="link-2">Browse</Nav.Link>
       </Nav.Item>
     </Nav>
+  );
+};
 
-) 
-
-export default MyNavBar
+export default MyNavBar;
