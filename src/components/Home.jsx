@@ -1,6 +1,6 @@
 import React from "react";
 import items from "../jsonData/history.json";
-import { Card, Button, Container, Row, Col } from "react-bootstrap";
+import { Card, Button, Container, Row, Col, FormLabel } from "react-bootstrap";
 
 const Home = () => {
   return (
@@ -23,9 +23,14 @@ const Home = () => {
                   <Card.Title className="text-truncate">
                     {item.title}
                   </Card.Title>
-                  <Card.Text></Card.Text>
-                  <Button className="btn-sm" variant="success">
+                  <FormLabel className="bg-warning text-white font-weight-bolder">
                     £{item.price}
+                  </FormLabel>
+                  <Button
+                    className="btn-sm ml-5 font-weight-bolder"
+                    variant="success"
+                  >
+                    Order now
                   </Button>
                 </Card.Body>
               </Card>

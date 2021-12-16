@@ -3,7 +3,8 @@ import { Nav } from "react-bootstrap";
 const MyNavBar = () => {
   return (
     <Nav
-      bg="dark"
+      className="bg-dark p-2"
+      style={{ position: "fixed", top: "0", width: "100%" }}
       variant="light"
       expand="lg"
       activeKey="/home"
